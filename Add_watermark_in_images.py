@@ -14,14 +14,14 @@ def scale(image, scale_width):
     return cv2.resize(image,(scale_width,new_height))
 
 
-logo=scale(cv2.imread(r"C:\Users\hp\Desktop\watermark\images\1.jpg"),100)
+logo=scale(cv2.imread(r"C:\Users\hp\Desktop\watermark\images\9.png"),200)
 h_logo, w_logo,_= logo.shape
 
 img=scale(cv2.imread(r"C:\Users\hp\Desktop\watermark\images\3.jpg"),800)
 h_img, w_img,_= img.shape
 
-center_y=int(h_img/-10)
-center_x=int(w_img/-14)
+center_y=int(h_img/10)
+center_x=int(w_img/8)
 top_y=center_y-int(h_logo/2)
 left_x = center_x- int(w_logo/2)
 bottom_y= top_y+h_logo
