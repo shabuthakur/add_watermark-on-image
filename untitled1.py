@@ -20,8 +20,8 @@ h_logo, w_logo,_= logo.shape
 img=scale(cv2.imread(r"C:\Users\hp\Desktop\watermark\images\3.jpg"),800)
 h_img, w_img,_= img.shape
 
-center_y=int(h_img/10)
-center_x=int(w_img/10)
+center_y=int(h_img/15)
+center_x=int(w_img/-14)
 top_y=center_y-int(h_logo/2)
 left_x = center_x- int(w_logo/2)
 bottom_y= top_y+h_logo
